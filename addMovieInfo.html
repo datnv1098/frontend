@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.1/css/tempusdominus-bootstrap-4.min.css'>
+    <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+<body> 
+    <div class="container">
+        <form action="/" method="post" role="form" class="form-horizontal">   
+            <div class="form-group required">
+               <label class="control-label font-weight-bold">Movie name (ENG):</label>
+               <input class="form-control" id="id_MOVIE_NAME_ENGLISH" name="MOVIE_NAME_ENGLISH" placeholder="Movie name (ENG)" required="required" title="Movie name (ENG)" type="text" /> 
+            </div> 
+            <div class="form-group required">
+                <label class="control-label font-weight-bold">Movie name (VN):</label>
+                <input class="form-control" id="id_MOVIE_NAME_VN" name="MOVIE_NAME_VN" placeholder="Movie name (VN)" required="required" title="Movie name (VN)" type="text" /> 
+             </div> 
+             <div class="form-group position-relative required"> 
+                <label class="control-label font-weight-bold">From date:</label>
+                <input type="text" class="form-control datetimepicker-input" name="FROM_DATE" id="datetimepicker2" placeholder="dd/mm/yy" data-toggle="datetimepicker" data-target="#datetimepicker2" />
+             </div> 
+             <div class="form-group position-relative required"> 
+                <label class="control-label font-weight-bold">To date:</label>
+                <input type="text" class="form-control datetimepicker-input" name="TO_DATE" id="datetimepicker3" placeholder="dd/mm/yy" data-toggle="datetimepicker" data-target="#datetimepicker3" />
+             </div> 
+             <div class="form-group required">
+                <label class="control-label font-weight-bold">Actor:</label>
+                <input class="form-control" id="id_ACTOR" name="ACTOR" placeholder="Actor" required="required" title="Actor" type="text" /> 
+             </div> 
+             <div class="form-group required">
+                <label class="control-label font-weight-bold">Movie Production Company:</label>
+                <input class="form-control" id="id_MOVIE_PRODUCTION_COMPANY" name="MOVIE_PRODUCTION_COMPANY" placeholder="Movie Production Company" required="required" title="Movie Production Company" type="text" /> 
+             </div> 
+             <div class="form-group required">
+                <label class="control-label font-weight-bold">Director:</label>
+                <input class="form-control" id="id_DIRECTOR" name="DIRECTOR" placeholder="Director" required="required" title="Director" type="text" /> 
+             </div> 
+             <div class="form-group required">
+                <label class="control-label font-weight-bold">Duration:</label>
+                <input class="form-control" id="id_DURATION" name="DURATION" placeholder="Duration" required="required" title="Duration" type="text" /> 
+             </div> 
+             <div class="form-group required">
+                <label class="control-label font-weight-bold">Version:</label>
+                <input class="form-control" id="id_VERSION" name="VERSION" placeholder="Version" required="required" title="Version" type="text" /> 
+             </div>  
+             <div class="form-group required">
+                <label class="control-label font-weight-bold">Type:</label>
+                <div class="custom-control custom-checkbox">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div><input type="checkbox" class="custom-control-input" name="TYPE_ID[1]" id="TYPEID1" value="true"> <label class="custom-control-label" for="TYPEID1">Hành động</label></div>
+                            <div><input type="checkbox" class="custom-control-input" name="TYPE_ID[2]" id="TYPEID2" value="true"> <label class="custom-control-label" for="TYPEID2">Hài hước</label></div>
+                            <div><input type="checkbox" class="custom-control-input" name="TYPE_ID[3]" id="TYPEID3" value="true"> <label class="custom-control-label" for="TYPEID3">Lãng mạn</label></div>
+                            <div><input type="checkbox" class="custom-control-input" name="TYPE_ID[4]" id="TYPEID4" value="true"> <label class="custom-control-label" for="TYPEID4">Tình cảm</label></div> 
+                        </div>
+                        <div class="col-sm-4">
+                            <div><input type="checkbox" class="custom-control-input" name="TYPE_ID[6]" id="TYPEID6" value="true"> <label class="custom-control-label" for="TYPEID6">Viễn tưởng</label></div>
+                            <div><input type="checkbox" class="custom-control-input" name="TYPE_ID[7]" id="TYPEID7" value="true"> <label class="custom-control-label" for="TYPEID7">Chiến tranh</label></div>
+                            <div><input type="checkbox" class="custom-control-input" name="TYPE_ID[8]" id="TYPEID8" value="true"> <label class="custom-control-label" for="TYPEID8">Kiếm hiệp</label></div>
+                            <div><input type="checkbox" class="custom-control-input" name="TYPE_ID[9]" id="TYPEID9" value="true"> <label class="custom-control-label" for="TYPEID9">Âm nhạc</label></div> 
+                        </div>
+                        <div class="col-sm-4">
+                            <div><input type="checkbox" class="custom-control-input" name="TYPE_ID[11]" id="TYPEID11" value="true"> <label class="custom-control-label" for="TYPEID11">Kinh dị</label></div>
+                            <div><input type="checkbox" class="custom-control-input" name="TYPE_ID[12]" id="TYPEID12" value="true"> <label class="custom-control-label" for="TYPEID12">Phiêu lưu</label></div>
+                            <div><input type="checkbox" class="custom-control-input" name="TYPE_ID[13]" id="TYPEID13" value="true"> <label class="custom-control-label" for="TYPEID13">Tâm lý 18+</label></div>
+                            <div><input type="checkbox" class="custom-control-input" name="TYPE_ID[14]" id="TYPEID14" value="true"> <label class="custom-control-label" for="TYPEID14">Hoạt hình</label></div> 
+                        </div>
+                    </div>  
+                </div>
+             </div>  
+             <div class="form-group required">
+                <label class="control-label font-weight-bold">Cinema room:</label>
+                <select class="form-control" id="exampleFormControlSelect1">
+                    <option value="1">Cinema room 1</option>
+                    <option value="2">Cinema room 2</option>
+                    <option value="3">Cinema room 3</option>
+                    <option value="4">Cinema room 4</option>
+                    <option value="5">Cinema room 5</option>
+                  </select>
+             </div>  
+             <div class="form-group required">
+                <label class="control-label font-weight-bold">Type:</label>
+                <div class="custom-control custom-checkbox ">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div><input type="checkbox" class="custom-control-input" name="SCHEDULE_ID[1]" id="SCHEDULE1" value="true"> <label class="custom-control-label" for="SCHEDULE1">08:00</label></div>
+                            <div><input type="checkbox" class="custom-control-input" name="SCHEDULE_ID[2]" id="SCHEDULE2" value="true"> <label class="custom-control-label" for="SCHEDULE2">09:00</label></div>
+                            <div><input type="checkbox" class="custom-control-input" name="SCHEDULE_ID[3]" id="SCHEDULE3" value="true"> <label class="custom-control-label" for="SCHEDULE3">10:00</label></div>
+                            <div><input type="checkbox" class="custom-control-input" name="SCHEDULE_ID[4]" id="SCHEDULE4" value="true"> <label class="custom-control-label" for="SCHEDULE4">11:00</label></div> 
+                        </div>
+                        <div class="col-sm-4">
+                            <div><input type="checkbox" class="custom-control-input" name="SCHEDULE_ID[6]" id="SCHEDULE6" value="true"> <label class="custom-control-label" for="SCHEDULE6">13:30</label></div>
+                            <div><input type="checkbox" class="custom-control-input" name="SCHEDULE_ID[7]" id="SCHEDULE7" value="true"> <label class="custom-control-label" for="SCHEDULE7">14:30</label></div>
+                            <div><input type="checkbox" class="custom-control-input" name="SCHEDULE_ID[8]" id="SCHEDULE8" value="true"> <label class="custom-control-label" for="SCHEDULE8">15:00</label></div>
+                            <div><input type="checkbox" class="custom-control-input" name="SCHEDULE_ID[9]" id="SCHEDULE9" value="true"> <label class="custom-control-label" for="SCHEDULE9">17:00</label></div> 
+                        </div>
+                        <div class="col-sm-4">
+                            <div><input type="checkbox" class="custom-control-input" name="SCHEDULE_ID[11]" id="SCHEDULE11" value="true"> <label class="custom-control-label" for="SCHEDULE11">16:30</label></div>
+                            <div><input type="checkbox" class="custom-control-input" name="SCHEDULE_ID[12]" id="SCHEDULE12" value="true"> <label class="custom-control-label" for="SCHEDULE12">19:00</label></div>
+                            <div><input type="checkbox" class="custom-control-input" name="SCHEDULE_ID[13]" id="SCHEDULE13" value="true"> <label class="custom-control-label" for="SCHEDULE13">20:00</label></div>
+                            <div><input type="checkbox" class="custom-control-input" name="SCHEDULE_ID[14]" id="SCHEDULE14" value="true"> <label class="custom-control-label" for="SCHEDULE14">21:00</label></div> 
+                        </div>
+                    </div>  
+                </div>
+             </div>  
+              <div class="form-group required">
+                <label class="control-label font-weight-bold">Content:</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="2" name="CONTENT"></textarea>
+             </div>  
+             <div class="form-group">
+                <label class="control-label font-weight-bold">Image:</label>
+                <div class="border rounded p-1 pl-3">
+                    <input type="file" class="form-control-file" id="exampleFormControlFile1" name="SMALL_IMAGE">
+                </div> 
+              </div> 
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary"><i class="fa fa-check" aria-hidden="true"></i>Save</button>
+                <button class="btn btn-primary" type="submit"><i class="fa fa-times" aria-hidden="true"></i>Back</button>
+            </div>
+        </form>
+        
+      </div>
+      <style>
+        .form-group.required .control-label:after {
+            content:"*";
+            color:red;
+        }
+      </style>
+      <script>
+        $(function () { 
+            $('#datetimepicker2').datetimepicker({
+                format: 'DD/MM/YYYY'
+            }); 
+            $('#datetimepicker3').datetimepicker({
+                format: 'DD/MM/YYYY'
+            });
+        });
+      </script> 
+      <script src='https://code.jquery.com/jquery-3.4.1.min.js'></script>
+      <script src='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js'></script>
+      <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js'></script>
+      <script src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js'></script>
+      <script src='https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.1/js/tempusdominus-bootstrap-4.min.js'></script><script  src="./script.js"></script>
+</body>
+</html>
